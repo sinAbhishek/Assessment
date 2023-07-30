@@ -59,7 +59,13 @@
       bind:value={desc}
       placeholder="Description"
     />
-    <button class=" w-max bg-slate-950 text-white px-4" on:click={details}>
+    <button
+      class=" w-max bg-slate-950 text-white px-4"
+      on:click={() => {
+        details();
+        close();
+      }}
+    >
       Submit</button
     >
   </div>
